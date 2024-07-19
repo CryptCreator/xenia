@@ -66,6 +66,8 @@ jobs:
           fetch-depth: 0
       - name: Setup
         run: .\xb setup
+      - name: Formate
+        run: .\xb format
       - name: Build
         run: .\xb build --config=Release --target=src\xenia-app --arch=arm64
       - name: Prepare artifacts
